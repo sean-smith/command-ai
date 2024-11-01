@@ -8,11 +8,21 @@ analyze_command() {
 Command: $cmd
 Exit Code: $exit_code
 
-Provide a very brief (1-2 lines) explanation of what happened."
+Provide a very brief (1-2 lines) explanation of what happened and if possible provide a corrected command in backticks."
 
     # Call Ollama and get response
     local analysis=$(ollama run llama3.2 "$prompt")
-    echo "$analysis"
+
+    # Extract command from backticks if present
+    if [[ $analysis =~ \Corrected command: `([^\`]+)\` ]]; then
+        local suggested_command="${match[1]}"
+        # Add to ZSH history
+        fc -R =(print -r -- "$suggested_command")
+        echo "$analysis"
+        echo "\033[32m💾 Suggested command added to history (press ↑ to use)\033[0m"
+    else
+        echo "$analysis"
+    fi
 }
 
 # Function to be called before each command

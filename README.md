@@ -22,12 +22,12 @@ A ZSH plugin that uses Ollama to analyze command execution and provide instant A
 
 1. Install Ollama: 
 
-macOS/Linux:
-```bash
-curl -fsSL https://ollama.ai/install.sh | sh
-```
-2. Start Ollama service
+    macOS/Linux:
+    ```bash
+    curl -fsSL https://ollama.ai/install.sh | sh
     ```
+2. Start Ollama service
+    ```bash
     ollama serve
     ```
 
@@ -35,32 +35,32 @@ curl -fsSL https://ollama.ai/install.sh | sh
 
     ```bash
     ollama pull llama3.2
-    ...
-    verifying sha256 digest 
-    writing manifest 
-    success 
-    ✅  ollama pull llama3.2    
     ```
 
 3. Install the plugin:
 
-
-2. Create plugins directory if it doesn't exist
-```bash
-mkdir -p ~/.zsh/plugins
-Clone this repository
-git clone https://github.com/yourusername/command-ai-assistant.git
-cp command-ai-assistant/last-command.plugin.zsh ~/.zsh/plugins/
-```
+    Create plugins directory if it doesn't exist
+    ```bash
+    mkdir -p ~/.zsh/plugins
+    ```
+    Clone this repository
+    ```bash
+    git clone https://github.com/yourusername/command-ai-assistant.git
+    cp command-ai-assistant/last-command.plugin.zsh ~/.zsh/plugins/
+    ```
 4. Add to your `~/.zshrc`:
-```bash
-source ~/.zsh/plugins/last-command.plugin.zsh
-```
+
+    ```bash
+    source ~/.zsh/plugins/last-command.plugin.zsh
+    ```
+
 5. Reload your shell:
-```bash
-source ~/.zshrc
-```
-## Usage
+
+    ```bash
+    source ~/.zshrc
+    ```
+
+## 🚀 Usage
 
 Simply use your terminal as normal. The plugin will automatically:
 - Monitor command execution
@@ -68,6 +68,7 @@ Simply use your terminal as normal. The plugin will automatically:
 - Provide AI analysis for failed commands
 
 Example output:
+
 ```bash
 $ ls /nonexistent
 ls: cannot access '/nonexistent': No such file or directory
