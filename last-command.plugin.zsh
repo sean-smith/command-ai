@@ -31,8 +31,8 @@ precmd() {
             STATUS_SYMBOL="\033[32m✅ \033[0m"
         else
             STATUS_SYMBOL="\033[31m❌ ($EXIT_CODE)\033[0m"
+            echo $STATUS_SYMBOL $LAST_COMMAND
         fi
-        # echo "[$COMMAND_TIME] $STATUS_SYMBOL $LAST_COMMAND"
 
         # Only analyze non-trivial commands (exit code != 0 or complex commands)
         if [ $EXIT_CODE -ne 0 ]; then
