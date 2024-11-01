@@ -2,19 +2,21 @@
 analyze_command() {
     local cmd="$1"
     local exit_code="$2"
+    local error_output="$3"
     
     # Prepare the prompt
-    local prompt="Analyze this command and its exit code:
+    local prompt="Analyze this command and its error:
 Command: $cmd
 Exit Code: $exit_code
+Error Output: $error_output
 
-Provide a very brief (1-2 lines) explanation of what happened and if possible provide a corrected command in backticks."
+Provide a very brief (1-2 lines) explanation of what happened and if possible provide a corrected command in backticks with the format \"Corrected command:\""
 
     # Call Ollama and get response
     local analysis=$(ollama run llama3.2 "$prompt")
 
-    # Extract command from backticks if present
-    if [[ $analysis =~ \Corrected command: `([^\`]+)\` ]]; then
+    # Extract command between backticks after "Corrected command: " if present
+    if [[ $analysis =~ "Corrected command: "\`([^\`]+)\` ]]; then
         local suggested_command="${match[1]}"
         # Add to ZSH history
         fc -R =(print -r -- "$suggested_command")
@@ -41,13 +43,11 @@ precmd() {
             STATUS_SYMBOL="\033[32m✅ \033[0m"
         else
             STATUS_SYMBOL="\033[31m❌ ($EXIT_CODE)\033[0m"
+            # Capture both stdout and stderr
+            local OUTPUT=$(eval "$LAST_COMMAND" 2>&1)
             echo $STATUS_SYMBOL $LAST_COMMAND
-        fi
-
-        # Only analyze non-trivial commands (exit code != 0 or complex commands)
-        if [ $EXIT_CODE -ne 0 ]; then
             echo "\033[34m💡 AI Analysis:\033[0m"
-            analyze_command "$LAST_COMMAND" "$EXIT_CODE"
+            analyze_command "$LAST_COMMAND" "$EXIT_CODE" "$OUTPUT"
             echo "-------------------"
         fi
     fi

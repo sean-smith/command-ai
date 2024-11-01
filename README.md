@@ -2,7 +2,7 @@
 
 A ZSH plugin that uses Ollama to analyze command execution and provide instant AI-powered feedback when commands fail or produce unexpected results.
 
-![Demo Screenshot](demo.png)
+![Demo Screenshot](demo.gif)
 
 ## Features
 
