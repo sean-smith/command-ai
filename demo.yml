@@ -1,0 +1,843 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/seaam/projects/command-ai
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 150
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 40
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 317
+    content: "\r\nThe default interactive shell is now zsh.\r\nTo update your account to use zsh, please run `chsh -s /bin/zsh`.\r\nFor more details, please visit https://support.apple.com/kb/HT208050.\r\n"
+  - delay: 7
+    content: "\e]697;OSCUnlock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;Dir=/Users/seaam/projects/command-ai\a\e]697;Shell=bash\a\e]697;ShellPath=/bin/bash\a\e]697;PID=73522\a\e]697;ExitCode=0\a\e]697;TTY=/dev/ttys008\a\e]697;Log=\a\e]697;User=seaam\a\e]697;OSCLock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;PreExec\a"
+  - delay: 5
+    content: "\e]697;OSCLock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;PreExec\a\e[?1034h\e]697;StartPrompt\a80a997140eb4:command-ai seaam$ \e]697;EndPrompt\a\e]697;NewCmd=ffff731706ea4cfc9b0081d531fe2fdd\a"
+  - delay: 7479
+    content: z
+  - delay: 231
+    content: s
+  - delay: 200
+    content: h
+  - delay: 106
+    content: "\a"
+  - delay: 556
+    content: "\r\n"
+  - delay: 1498
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                                     \r \r\e]2;seaam@80a997140eb4:~/projects/command-ai\a\e]1;..ts/command-ai\a\e]7;file://80a997140eb4/Users/seaam/projects/command-ai\e\\"
+  - delay: 9
+    content: "\e]697;OSCUnlock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;Dir=/Users/seaam/projects/command-ai\a\e]697;Shell=zsh\a\e]697;ShellPath=/bin/zsh\a\e]697;PID=73559\a\e]697;ExitCode=0\a\e]697;TTY=/dev/ttys003\a\e]697;Log=\a\e]697;ZshAutosuggestionColor=\a\e]697;FigAutosuggestionColor=fg=8\a\e]697;User=seaam\a\r\e[0m\e[27m\e[24m\e[J\e]697;StartPrompt\a\e[01;32m➜  \e[36mcommand-ai\e[00m \e]697;EndPrompt\a\e]697;NewCmd=ffff731706ea4cfc9b0081d531fe2fdd\a\e[K\e[135C\e]697;StartPrompt\a\e]697;EndPrompt\a\e[135D\e[?1h\e=\e[?2004h"
+  - delay: 77
+    content: "\r\r\e[0m\e[27m\e[24m\e[J\e]697;StartPrompt\a\e[01;32m➜  \e[36mcommand-ai\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]697;EndPrompt\a\e]697;NewCmd=ffff731706ea4cfc9b0081d531fe2fdd\a\e[K\e[122C\e]697;StartPrompt\a\e]697;EndPrompt\a\e[122D"
+  - delay: 3094
+    content: "\r\r\nbck-i-search: _\e[K\e[A\e[12C"
+  - delay: 644
+    content: "terminalizer re\e[4mc\e[24mord demo\e[1B\r\e[K\r\r\nbck-i-search: c_\e[K\e[A\e[A\e[26C"
+  - delay: 152
+    content: "\e[15D\e[4mc\e[4mp\e[24m last-command\e[24m.plugin.zsh ~/.zsh/plugins/ && source ~/.zsh/plugins/last-command.plugin.zsh\e[1B\rbck-i-search: cp_\e[1B\r\e[K\e[A\e[A\e[27C"
+  - delay: 650
+    content: "\e[24mc\e[24mp\e[1B\r\e[K\e[A\e[27C\e[?1l\e>\e[?2004l\e[1B\r\e]697;OSCLock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;PreExec\a\e]2;cp last-command.plugin.zsh ~/.zsh/plugins/ && source \a\e]1;cp\a"
+  - delay: 14
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                                     \r \r\e]2;seaam@80a997140eb4:~/projects/command-ai\a\e]1;..ts/command-ai\a\e]7;file://80a997140eb4/Users/seaam/projects/command-ai\e\\"
+  - delay: 12
+    content: "\e]697;OSCUnlock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;Dir=/Users/seaam/projects/command-ai\a\e]697;Shell=zsh\a\e]697;ShellPath=/bin/zsh\a\e]697;PID=73559\a\e]697;ExitCode=0\a\e]697;TTY=/dev/ttys003\a\e]697;Log=\a\e]697;ZshAutosuggestionColor=\a\e]697;FigAutosuggestionColor=fg=8\a\e]697;User=seaam\a\r\e[0m\e[27m\e[24m\e[J\e]697;StartPrompt\a\e[01;32m➜  \e[36mcommand-ai\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]697;EndPrompt\a\e]697;NewCmd=ffff731706ea4cfc9b0081d531fe2fdd\a\e[K\e[122C\e]697;StartPrompt\a\e]697;EndPrompt\a\e[122D\e[?1h\e=\e[?2004h"
+  - delay: 1888
+    content: g
+  - delay: 131
+    content: "\bgi"
+  - delay: 111
+    content: t
+  - delay: 144
+    content: ' '
+  - delay: 378
+    content: s
+  - delay: 175
+    content: t
+  - delay: 338
+    content: k
+  - delay: 32
+    content: j
+  - delay: 7
+    content: a
+  - delay: 20
+    content: s
+  - delay: 54
+    content: d
+  - delay: 93
+    content: 'n'
+  - delay: 265
+    content: "\e[?1l\e>\e[?2004l\r\r\n"
+  - delay: 15
+    content: "\e]697;OSCLock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;PreExec\a\e]2;git stkjasdn\a\e]1;git\a"
+  - delay: 31
+    content: "git: 'stkjasdn' is not a git command. See 'git --help'.\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                                     \r \r"
+  - delay: 21
+    content: "\e[31m❌ (1)\e[0m git stkjasdn\r\n\e[34m\U0001F4A1 AI Analysis:\e[0m\r\n"
+  - delay: 142
+    content: "\e[?25l⠙ \e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[2K\e[1G⠹ \e[?25h"
+  - delay: 61
+    content: "\e[?25l\e[?25l\e[2K\e[1G\e[?25h\e[2K\e[1G\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h\e[?25l\e[?25hThe user attempted to run an invalid Git command, which resulted in a 1 exit code error message indicating that the specified command is not recognized by Git.\r\n\r\n Corrected command: `git status`\r\n\e[32m\U0001F4BE Suggested command added to history (press ↑ to use)\e[0m\r\n-------------------\r\n\e]2;seaam@80a997140eb4:~/projects/command-ai\a\e]1;..ts/command-ai\a\e]7;file://80a997140eb4/Users/seaam/projects/command-ai\e\\"
+  - delay: 9
+    content: "\e]697;OSCUnlock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;Dir=/Users/seaam/projects/command-ai\a\e]697;Shell=zsh\a\e]697;ShellPath=/bin/zsh\a\e]697;PID=73559\a\e]697;ExitCode=1\a\e]697;TTY=/dev/ttys003\a\e]697;Log=\a\e]697;ZshAutosuggestionColor=\a\e]697;FigAutosuggestionColor=fg=8\a\e]697;User=seaam\a\r\e[0m\e[27m\e[24m\e[J\e]697;StartPrompt\a\e[01;31m➜  \e[36mcommand-ai\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]697;EndPrompt\a\e]697;NewCmd=ffff731706ea4cfc9b0081d531fe2fdd\a\e[K\e[122C\e]697;StartPrompt\a\e]697;EndPrompt\a\e[122D\e[?1h\e=\e[?2004h"
+  - delay: 997
+    content: git status
+  - delay: 504
+    content: "\e[?1l\e>\e[?2004l\r\r\n"
+  - delay: 18
+    content: "\e]697;OSCLock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;PreExec\a\e]2;git status\a\e]1;git\a"
+  - delay: 25
+    content: "On branch main\r\nYour branch is up to date with 'origin/main'.\r\n\r\nUntracked files:\r\n  (use \"git add <file>...\" to include in what will be committed)\r\n\t\e[31mcli.py\e[m\r\n\t\e[31mdemo.png\e[m\r\n\t\e[31mdemo.yml\e[m\r\n\t\e[31mrender.gif\e[m\r\n\t\e[31mtest.py\e[m\r\n\r\nnothing added to commit but untracked files present (use \"git add\" to track)\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                                     \r \r\e]2;seaam@80a997140eb4:~/projects/command-ai\a\e]1;..ts/command-ai\a\e]7;file://80a997140eb4/Users/seaam/projects/command-ai\e\\"
+  - delay: 9
+    content: "\e]697;OSCUnlock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;Dir=/Users/seaam/projects/command-ai\a\e]697;Shell=zsh\a\e]697;ShellPath=/bin/zsh\a\e]697;PID=73559\a\e]697;ExitCode=0\a\e]697;TTY=/dev/ttys003\a\e]697;Log=\a\e]697;ZshAutosuggestionColor=\a\e]697;FigAutosuggestionColor=fg=8\a\e]697;User=seaam\a\r\e[0m\e[27m\e[24m\e[J\e]697;StartPrompt\a\e[01;32m➜  \e[36mcommand-ai\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]697;EndPrompt\a\e]697;NewCmd=ffff731706ea4cfc9b0081d531fe2fdd\a\e[K\e[122C\e]697;StartPrompt\a\e]697;EndPrompt\a\e[122D\e[?1h\e=\e[?2004h"
+  - delay: 1991
+    content: g
+  - delay: 194
+    content: "\bgi"
+  - delay: 78
+    content: t
+  - delay: 92
+    content: ' '
+  - delay: 160
+    content: c
+  - delay: 104
+    content: o
+  - delay: 244
+    content: m
+  - delay: 135
+    content: m
+  - delay: 263
+    content: i
+  - delay: 1065
+    content: t
+  - delay: 36
+    content: "\e[90m -m \"first commit\"\e[39m\e[18D"
+  - delay: 49
+    content: "\e[39m "
+  - delay: 2012
+    content: "\e[39m-"
+  - delay: 534
+    content: "\e[39ms\e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[39m \e[15D"
+  - delay: 785
+    content: "\e[?1l\e>\e[?2004l\r\r\n"
+  - delay: 15
+    content: "\e]697;OSCLock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;PreExec\a\e]2;git commit -s\a\e]1;git\a"
+  - delay: 215
+    content: "On branch main\r\nYour branch is up to date with 'origin/main'.\r\n\r\nUntracked files:\r\n  (use \"git add <file>...\" to include in what will be committed)\r\n\t\e[31mcli.py\e[m\r\n\t\e[31mdemo.png\e[m\r\n\t\e[31mdemo.yml\e[m\r\n\t\e[31mrender.gif\e[m\r\n\t\e[31mtest.py\e[m\r\n\r\nnothing added to commit but untracked files present (use \"git add\" to track)\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                                     \r \r"
+  - delay: 176
+    content: "\e[31m❌ (1)\e[0m git commit -s\r\n\e[34m\U0001F4A1 AI Analysis:\e[0m\r\n"
+  - delay: 141
+    content: "\e[?25l⠙ \e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[2K\e[1G⠹ \e[?25h"
+  - delay: 70
+    content: "\e[?25l\e[?25l\e[2K\e[1G\e[?25h\e[2K\e[1G\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 22
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 7
+    content: "The command `git commit -s` was used, which allows the addition of commit messages even when there are untracked files. However, since the commit message is not provided by the user (due to `-s` flag), Git assumes that no changes were made and displays a message indicating that only untracked files are present.\r\n\r\nCorrected command: `git commit -s -m \"Initial commit\"`\r\n\e[32m\U0001F4BE Suggested command added to history (press ↑ to use)\e[0m\r\n-------------------\r\n\e]2;seaam@80a997140eb4:~/projects/command-ai\a\e]1;..ts/command-ai\a\e]7;file://80a997140eb4/Users/seaam/projects/command-ai\e\\"
+  - delay: 10
+    content: "\e]697;OSCUnlock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;Dir=/Users/seaam/projects/command-ai\a\e]697;Shell=zsh\a\e]697;ShellPath=/bin/zsh\a\e]697;PID=73559\a\e]697;ExitCode=1\a\e]697;TTY=/dev/ttys003\a\e]697;Log=\a\e]697;ZshAutosuggestionColor=\a\e]697;FigAutosuggestionColor=fg=8\a\e]697;User=seaam\a\r\e[0m\e[27m\e[24m\e[J\e]697;StartPrompt\a\e[01;31m➜  \e[36mcommand-ai\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]697;EndPrompt\a\e]697;NewCmd=ffff731706ea4cfc9b0081d531fe2fdd\a\e[K\e[122C\e]697;StartPrompt\a\e]697;EndPrompt\a\e[122D\e[?1h\e=\e[?2004h"
+  - delay: 1706
+    content: git commit -s -m "Initial commit"
+  - delay: 1745
+    content: "\e[?1l\e>\e[?2004l\r\r\n"
+  - delay: 17
+    content: "\e]697;OSCLock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;PreExec\a\e]2;git commit -s -m \"Initial commit\"\a\e]1;git\a"
+  - delay: 205
+    content: "On branch main\r\nYour branch is up to date with 'origin/main'.\r\n\r\nUntracked files:\r\n  (use \"git add <file>...\" to include in what will be committed)\r\n\t\e[31mcli.py\e[m\r\n\t\e[31mdemo.png\e[m\r\n\t\e[31mdemo.yml\e[m\r\n\t\e[31mrender.gif\e[m\r\n\t\e[31mtest.py\e[m\r\n\r\nnothing added to commit but untracked files present (use \"git add\" to track)\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                                     \r \r"
+  - delay: 207
+    content: "\e[31m❌ (1)\e[0m git commit -s -m \"Initial commit\"\r\n\e[34m\U0001F4A1 AI Analysis:\e[0m\r\n"
+  - delay: 145
+    content: "\e[?25l⠙ \e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[2K\e[1G⠹ \e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[2K\e[1G⠸ \e[?25h"
+  - delay: 32
+    content: "\e[?25l\e[?25l\e[2K\e[1G\e[?25h\e[2K\e[1G\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 22
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 6
+    content: "The command failed because it tried to commit without adding the untracked files to Git tracking. The `-s` option automatically adds the commit message, but doesn't add any unstaged changes.\r\n\r\nCorrected command: `git commit -s -m \"Initial commit\" && git add cli.py demo.png demo.yml render.gif`\r\n\e[32m\U0001F4BE Suggested command added to history (press ↑ to use)\e[0m\r\n-------------------\r\n\e]2;seaam@80a997140eb4:~/projects/command-ai\a\e]1;..ts/command-ai\a\e]7;file://80a997140eb4/Users/seaam/projects/command-ai\e\\"
+  - delay: 11
+    content: "\e]697;OSCUnlock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;Dir=/Users/seaam/projects/command-ai\a\e]697;Shell=zsh\a\e]697;ShellPath=/bin/zsh\a\e]697;PID=73559\a\e]697;ExitCode=1\a\e]697;TTY=/dev/ttys003\a\e]697;Log=\a\e]697;ZshAutosuggestionColor=\a\e]697;FigAutosuggestionColor=fg=8\a\e]697;User=seaam\a\r\e[0m\e[27m\e[24m\e[J\e]697;StartPrompt\a\e[01;31m➜  \e[36mcommand-ai\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]697;EndPrompt\a\e]697;NewCmd=ffff731706ea4cfc9b0081d531fe2fdd\a\e[K\e[122C\e]697;StartPrompt\a\e]697;EndPrompt\a\e[122D\e[?1h\e=\e[?2004h"
+  - delay: 8319
+    content: >-
+      git commit -s -m "Initial commit" && git add cli.py demo.png demo.yml
+      render.gif
+  - delay: 2310
+    content: "\e[?1l\e>\e[?2004l\r\r\n"
+  - delay: 14
+    content: "\e]697;OSCLock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;PreExec\a\e]2;git commit -s -m \"Initial commit\" && git add cli.py demo.png demo.yml \a\e]1;git\a"
+  - delay: 192
+    content: "On branch main\r\nYour branch is up to date with 'origin/main'.\r\n\r\nUntracked files:\r\n  (use \"git add <file>...\" to include in what will be committed)\r\n\t\e[31mcli.py\e[m\r\n\t\e[31mdemo.png\e[m\r\n\t\e[31mdemo.yml\e[m\r\n\t\e[31mrender.gif\e[m\r\n\t\e[31mtest.py\e[m\r\n\r\nnothing added to commit but untracked files present (use \"git add\" to track)\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                                     \r \r"
+  - delay: 186
+    content: "\e[31m❌ (1)\e[0m git commit -s -m \"Initial commit\" && git add cli.py demo.png demo.yml render.gif\r\n\e[34m\U0001F4A1 AI Analysis:\e[0m\r\n"
+  - delay: 143
+    content: "\e[?25l⠙ \e[?25h"
+  - delay: 101
+    content: "\e[?25l\e[2K\e[1G⠹ \e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[2K\e[1G⠸ \e[?25h"
+  - delay: 46
+    content: "\e[?25l\e[?25l\e[2K\e[1G\e[?25h\e[2K\e[1G\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 19
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 6
+    content: "The error message indicates that there are untracked files in the repository, which means they have not been added to the Git index using `git add`. The `-s` flag is used to suppress the commit message input, but it does not affect the tracking of uncommitted changes.\r\n\r\nCorrected command: `git commit -m \"Initial commit\" && git add cli.py demo.png demo.yml render.gif && git commit -m \"Initial commit\"`\r\n\e[32m\U0001F4BE Suggested command added to history (press ↑ to use)\e[0m\r\n-------------------\r\n\e]2;seaam@80a997140eb4:~/projects/command-ai\a\e]1;..ts/command-ai\a\e]7;file://80a997140eb4/Users/seaam/projects/command-ai\e\\"
+  - delay: 8
+    content: "\e]697;OSCUnlock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;Dir=/Users/seaam/projects/command-ai\a\e]697;Shell=zsh\a\e]697;ShellPath=/bin/zsh\a\e]697;PID=73559\a\e]697;ExitCode=1\a\e]697;TTY=/dev/ttys003\a\e]697;Log=\a\e]697;ZshAutosuggestionColor=\a\e]697;FigAutosuggestionColor=fg=8\a\e]697;User=seaam\a\r\e[0m\e[27m\e[24m\e[J\e]697;StartPrompt\a\e[01;31m➜  \e[36mcommand-ai\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]697;EndPrompt\a\e]697;NewCmd=ffff731706ea4cfc9b0081d531fe2fdd\a\e[K\e[122C\e]697;StartPrompt\a\e]697;EndPrompt\a\e[122D\e[?1h\e=\e[?2004h"
+  - delay: 4329
+    content: "\e[?2004l\r\r\n"
+  - delay: 34
+    content: "\e]697;OSCUnlock=ffff731706ea4cfc9b0081d531fe2fdd\a\e]697;Dir=/Users/seaam/projects/command-ai\a\e]697;Shell=bash\a\e]697;ShellPath=/bin/bash\a\e]697;PID=73522\a\e]697;ExitCode=1\a\e]697;TTY=/dev/ttys008\a\e]697;Log=\a\e]697;User=seaam\a\e]697;StartPrompt\a80a997140eb4:command-ai seaam$ \e]697;EndPrompt\a\e]697;NewCmd=ffff731706ea4cfc9b0081d531fe2fdd\a"
+  - delay: 644
+    content: "logout\r\n"
